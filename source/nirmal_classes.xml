@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<classes>
+<class name="vowelsAbv" exts=".alt .large">u0C3E u0C3F u0C40 u0C46 u0C47 u0C48 u0C4A u0C4B u0C4C u0C4D</class>
+<class name="vowelsFol" exts=".alt .large">u0C41 u0C42 u0C43 u0C44</class>
+<class name="vowelsIndep"> u0C05 u0C06 u0C07 u0C08 u0C09 u0C0A u0C0C u0C0E u0C0F u0C10 u0C12 u0C13 u0C14</class>
+<class name="consThinTail">u0C16.base u0C1F.base u0C2C.base u0C32.base</class>
+<class name="hatImatra" exts=".base">u0C17 u0C1D u0C20 u0C25 u0C26 u0C27 u0C30</class>
+<class name="smallBase" exts=".base">u0C19 u0C1E</class>
+<class name="largeBase" exts=".base">u0C2A u0C2B u0C35</class>
+<class name="tallbaseVowels">u0C4A u0C4B u0C4C</class>
+<class name="baseChar" exts=".base .tallbase _u0C40 _u0C3F">
+    u0C05 u0C06 u0C07 u0C08 u0c09 u0C0A u0C0C u0C0E u0C0F u0C10 u0C12 u0C13 u0C14
+	u0C15 u0C16 u0C17 u0C18 u0C19 u0C1A u0C1B u0C1C u0C1D u0C1E u0C1F
+	u0C20 uC021 uC022 u0C23 u0C24 u0C25 u0C26 u0C27 u0C28       u0C2A u0C2B u0C2C u0C2D u0C2E u0C2F
+	u0C30 u0C31 u0C32 u0C33       u0C35 u0C36 u0C37 u0C38 u0C39
+    u0C60 u0C61 u0C2f.longi
+</class>
+<class name="uDia" exts=".wide .widest .small .joined .widelow">u0C3E u0C3F u0C40 u0C41 u0C42 u0C43 u0C44 u0C46 u0C47 u0C48 u0C4A u0C4B u0C4C u0C4D</class>
+<class name="lDia">u0C56
+	u0C15.sub u0C16.sub u0C17.sub u0C18.sub u0C19.sub u0C1A.sub u0C1B.sub u0C1C.sub u0C1D.sub u0C1E.sub u0C1F.sub
+	u0C20.sub uC021.sub uC022.sub u0C23.sub u0C24.sub u0C25.sub u0C26.sub u0C27.sub u0C28.sub       u0C2A.sub u0C2B.sub u0C2C.sub u0C2D.sub u0C2E.sub u0C2F.sub
+	u0C30.sub u0C31.sub u0C32.sub u0C33.sub       u0C35.sub u0C36.sub u0C37.sub u0C38.sub u0C39.sub
+    u0C62 u0C63
+</class>
+</classes>

@@ -1,0 +1,108 @@
+#define opt2(x) [x? x]?
+#define opt3(x) [opt2(x) x]?
+#define opt4(x) [opt3(x) x]?
+
+/*
+table(glyph);
+cbaseChar = (g0c05, g0c06, g0c07, g0c08, g0c09, g0c0a, g0c0c, g0c0e,
+    g0c0f, g0c10, g0c12, g0c13, g0c14, g0c15, g0c16, g0c17,
+    g0c18, g0c19, g0c1a, g0c1b, g0c1c, g0c1d, g0c1e, g0c1f,
+    g0c20, g0c23, g0c24, g0c25, g0c26, g0c27, g0c28, g0c2a,
+    g0c2b, g0c2c, g0c2d, g0c2e, g0c2f, g0c30, g0c31, g0c32,
+    g0c33, g0c35, g0c36, g0c37, g0c38, g0c39, g0c60, g0c61,
+    g0c15_base, g0c16_base, g0c16_0c3f, g0c17_base, g0c18_base, g0c1a_base, g0c1a_0c3f, g0c1b_base,
+    g0c1b_0c3f, g0c1c_0c3f, g0c1d_base, g0c1f_base, g0c20_base, g0c24_base, g0c24_0c3f, g0c25_base,
+    g0c26_base, g0c27_base, g0c28_base, g0c28_0c3f, g0c2a_base, g0c2b_base, g0c2c_base, g0c2c_0c3f,
+    g0c2d_base, g0c2d_0c3f, g0c2e_base, g0c2e_0c3f, g0c2f_base, g0c2f_longi, g0c30_base, g0c32_base,
+    g0c32_0c3f, g0c33_base, g0c33_0c3f, g0c35_base, g0c35_0c3f, g0c36_base, g0c36_0c3f, g0c37_tallbase,
+    g0c38_tallbase, g0c39_base, g0c16_0c40, g0c1a_0c40, g0c1b_0c40, g0c1c_0c40, g0c24_0c40, g0c28_0c40,
+    g0c2c_0c40, g0c2d_0c40, g0c2e_0c40, g0c32_0c40, g0c33_0c40, g0c35_0c40, g0c36_0c40, g0c2a_tallbase,
+    g0c2b_tallbase);
+chatImatra = (g0c17, g0c1d, g0c20, g0c25, g0c26, g0c27, g0c30, g0c17_base,
+    g0c1d_base, g0c20_base, g0c25_base, g0c26_base, g0c27_base, g0c30_base);
+clDia = (g0c56, g0c62, g0c63, g0c15_sub, g0c16_sub, g0c17_sub, g0c18_sub, g0c19_sub,
+    g0c1a_sub, g0c1b_sub, g0c1c_sub, g0c1d_sub, g0c1e_sub, g0c1f_sub, g0c20_sub, g0c23_sub,
+    g0c24_sub, g0c25_sub, g0c26_sub, g0c27_sub, g0c28_sub, g0c2a_sub, g0c2b_sub, g0c2c_sub,
+    g0c2d_sub, g0c2e_sub, g0c2f_sub, g0c30_sub, g0c31_sub, g0c32_sub, g0c33_sub, g0c35_sub,
+    g0c36_sub, g0c37_sub, g0c38_sub, g0c39_sub);
+clargeBase = (g0c2a, g0c2b, g0c35, g0c2a_base, g0c2b_base, g0c35_base);
+consThinTail = (g0c16_base, g0c1f_base, g0c2c_base, g0c32_base);
+csmallBase = (g0c19, g0c1e);
+ctallbaseVowels = (g0c4a, g0c4b, g0c4c);
+cuDia = (g0c3e, g0c3f, g0c40, g0c41, g0c42, g0c43, g0c44, g0c46,
+    g0c47, g0c48, g0c4a, g0c4b, g0c4c, g0c4d, g0c3f_joined, g0c40_joined,
+    g0c41_small, g0c42_small, g0c48_wide, g0c4c_wide, g0c4c_widest, g0c4b_widelow, g0c3e_small, g0c4a_wide);
+cvowelsAbv = (g0c3e, g0c3f, g0c40, g0c46, g0c47, g0c48, g0c4a, g0c4b,
+    g0c4c, g0c4d);
+cvowelsFol = (g0c41, g0c42, g0c43, g0c44, g0c41_large, g0c42_large);
+cvowelsIndep = (g0c05, g0c06, g0c07, g0c08, g0c09, g0c0a, g0c0c, g0c0e,
+    g0c0f, g0c10, g0c12, g0c13, g0c14);
+endtable;
+*/
+
+table(substitution);
+pass(1);
+g0c4d cno_sub > _ csub:(1 2);
+g0c48 _ > g0c46 g0c56:1;
+endpass;
+
+pass(2);
+#ifdef HAS_cligu0C3F
+cligno_u0C3F g0c3f > cligu0C3F:(1 v) _ / ^ _ opt2(csub) _=v;
+#endif
+
+#ifdef HAS_cligu0C40
+cligno_u0C40 g0c40 > cligu0C40:(1 v) _ / ^ _ opt2(csub) _=v;
+#endif
+
+#ifdef HAS_cjoined
+cno_joined > cjoined / ^ chatImatra _;
+#endif
+
+#ifdef HAS_clarge
+cno_large > clarge / ^ clargeBase opt2(csub) _;
+#endif
+
+#ifdef HAS_csmall
+cno_small > csmall / ^ csmallBase opt2(csub) _;
+#endif
+
+g0c2f_base g0c40 > g0c2f_longi:(1 v) _ / ^ _ opt2(csub) _=v;
+endpass;
+
+pass(3);
+//_ g0c30_sub > g0c30_sub_alt:(r) _ / _ ^ (cno_sub cbase) csub? _=r;
+g0c30_sub > g0c30_sub_alt / ^ (cno_sub cbase) csub? _;
+
+cno_tallbase > ctallbase / ^ _ opt2(csub) ctallbaseVowels;         // Make sure this one comes 1st
+cno_shortbase > cshortbase / ^ _ opt2(csub) (cvowelsAbv cjoined);  // and before this rule!
+cno_base > cbase / ^ _ opt2(csub) (cvowelsAbv cjoined);
+
+// why is this repeated here?
+cligno_u0C3F g0c3f > cligu0C3F:(1 v) _ / ^ _ [csub? csub]? _=v;
+
+endpass;
+endtable;
+
+#define ATTACH(x) cTakes ## x ## Dia c ## x ## Dia { attach {to = @1; with = x ## M; at = x ## S}; user1 = 1} / ^ _ opt4(cnTakes ## x ## Dia) _{user1 == 0};
+
+table(positioning);
+pass(1);
+cTakesBLWDia cBLWDia {attach.to=@1; attach.with=BLWM; attach.at=BLWS; user1=1} / ^ _ opt4(clDia) _ {user1 == 0};
+// g0c30_sub_alt {attach {to=@B; with=M2MM; at=M2MS}; user1=1} / _ 
+ATTACH(TOP)
+ATTACH(M2M)
+cTakesKIDia cKIDia {attach.to=@1; attach.with=KIM; attach.at=KIS; user1=1} / ^ _ opt4(clDia) _ {user1 == 0};
+cTakesFVDia cFVDia {attach.to=@1; attach.with=FVM; attach.at=FVS; user1=1} / ^ _ opt4(clDia) _ {user1 == 0};
+cTakesMAFDia cMAFDia {attach.to=@1; attach.with=MAFM; attach.at=MAFS; user1=1} / ^ _ opt4(clDia) _ {user1 == 0};
+cTakesTBDia cTBDia {attach.to=@1; attach.with=TBM; attach.at=TBS; user1=1} / ^ _ opt4(clDia) _ {user1 == 0};
+cTakesVDia cVDia {attach.to=@1; attach.with=VM; attach.at=VS; user1=1} / ^ _ opt4(clDia) _ {user1 == 0};
+cTakesCRDia cCRDia {attach.to=@1; attach.with=CRM; attach.at=CRS; user1=1} / ^ _ opt4((clDia cuDia)) _ {user1 == 0};
+endpass;
+
+endtable;
+/*
+pass(2);
+g0c30_base {kern.x = @2.rtpointkern} / g0c4a _ g0c4a;
+endpass;
+*/
