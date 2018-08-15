@@ -1,0 +1,5 @@
+faces = ('Nirmal', 'Asha', 'Elur')
+facesLegacy = ('NIRM', 'ASHA', 'ELUR')
+styles = ('-R', '-B', '-I', '-BI')
+stylesName = ('Regular', 'Bold', 'Italic', 'Bold Italic')
+stylesLegacy = ('', 'BD', 'I', 'BI')

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+faces="Nirmal Asha Elur"
+styles=(Regular Bold Italic "Bold Italic")
+desc_long="Pan Telugu font designed to support all the languages using the Telugu script."
+
+export nlci=$HOME/script/tools
+source ${nlci}/prepare.bash
+
+source ${nlci}/addchars.bash
+
+source ${nlci}/metadata.bash
+
+echo "done producing main UFO sources"
+
+# handle one Extra Bold face
+faces="ElurBlack" # Extra-Bold
+styles=(Regular)
+
+echo "done producing UFO sources"
