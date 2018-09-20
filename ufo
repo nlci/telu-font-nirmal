@@ -1,6 +1,6 @@
 #!/bin/bash
 
-faces="Nirmal Asha Elur"
+faces=(Nirmal Asha Elur) # "Elur Extra Bold"
 styles=(Regular Bold Italic "Bold Italic")
 desc_long="Pan Telugu font designed to support all the languages using the Telugu script."
 
