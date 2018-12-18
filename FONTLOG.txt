@@ -16,10 +16,10 @@ ChangeLog
 
 Unreleased
 - Add many Latin and Devanagari characters
-- Latin glyphs in Nirmal and Asha are from Gentium Book Basic (https://software.sil.org/gentium/)
-- Latin glyphs in Elur are from Sophia Nubian (https://scripts.sil.org/SophiaNubian/)
-- Additional Latin glyphs are from Charis SIL (https://software.sil.org/charis/)
-- Indian Rupee Sign is from Annapurna SIL (https://software.sil.org/annapurna/)
+- Latin glyphs in Nirmal and Asha are from Gentium Book Basic (https://software.sil.org/gentium/) scaled 71%
+- Latin glyphs in Elur are from Sophia Nubian (https://scripts.sil.org/SophiaNubian/) scaled 71%
+- Additional Latin glyphs are from Charis SIL (https://software.sil.org/charis/) scaled 71%
+- Indian Rupee Sign is from Annapurna SIL (https://software.sil.org/annapurna/) scaled 71%
 5 Jun 2015 (Dev NLCI) NLCI Telugu fonts version 0.911
 - Latin glyphs are from Charis SIL (http://scripts.sil.org/CharisSILfont)
 
