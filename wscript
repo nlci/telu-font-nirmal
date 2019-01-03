@@ -72,8 +72,6 @@ if '-l' in opts:
 
 if '-l' in opts:
     faces = list()
-else:
-    faces = ('Nirmal', 'Asha')
 for f in faces:
     p = package(
         appname = APPNAME + '-' + f.lower(),
