@@ -7,8 +7,6 @@ desc_long="Pan Telugu font designed to support all the languages using the Telug
 export nlci=$HOME/script/tools
 source ${nlci}/prepare.bash
 
-source ${nlci}/addchars.bash
-
 source ${nlci}/metadata.bash
 
 echo "done producing main UFO sources"
