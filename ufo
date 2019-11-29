@@ -5,6 +5,7 @@ styles=(Regular Bold Italic "Bold Italic")
 desc_long="Pan Telugu font designed to support all the languages using the Telugu script."
 
 export nlci=$HOME/script/tools
+export src=source
 source ${nlci}/prepare.bash
 
 source ${nlci}/metadata.bash
@@ -15,4 +16,5 @@ echo "done producing main UFO sources"
 faces="ElurBlack" # Extra-Bold
 styles=(Regular)
 
+rm -f ${src}/*-???*.sfd*
 echo "done producing UFO sources"

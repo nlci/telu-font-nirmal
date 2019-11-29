@@ -1,7 +1,38 @@
 <?xml version="1.0"?>
 <font>
 <glyphs>
+<glyph PSName="colon.telu"><base UID="F03A"></base></glyph>
+<glyph PSName="comma.telu"><base UID="F02C"></base></glyph>
+<glyph PSName="eight.telu"><base UID="F038"></base></glyph>
+<glyph PSName="exclam.telu"><base UID="F021"></base></glyph>
+<glyph PSName="five.telu"><base UID="F035"></base></glyph>
+<glyph PSName="four.telu"><base UID="F034"></base></glyph>
+<glyph PSName="hyphen.telu"><base UID="F02D"></base></glyph>
+<glyph PSName="nine.telu"><base UID="F039"></base></glyph>
+<glyph PSName="one.telu"><base UID="F031"></base></glyph>
+<glyph PSName="parenleft.telu"><base UID="F028"></base></glyph>
+<glyph PSName="parenright.telu"><base UID="F029"></base></glyph>
+<glyph PSName="period.telu"><base UID="F02E"></base></glyph>
+<glyph PSName="question.telu"><base UID="F03F"></base></glyph>
+<glyph PSName="quoteleft.telu"><base UID="F022"></base></glyph>
+<glyph PSName="quotedblleft.telu"><base UID="F022"></base><base UID="F022"></base></glyph>
+<glyph PSName="quoteright.telu"><base UID="F027"></base></glyph>
+<glyph PSName="quotedblright.telu"><base UID="F027"></base><base UID="F027"></base></glyph>
+<glyph PSName="semicolon.telu"><base UID="F03B"></base></glyph>
+<glyph PSName="seven.telu"><base UID="F037"></base></glyph>
+<glyph PSName="six.telu"><base UID="F036"></base></glyph>
+<glyph UID="2215" PSName="divisionslash"><base UID="F02F"></base></glyph>
+<glyph PSName="slash.telu"><base UID="F02F"></base></glyph>
+<glyph PSName="space.telu"><base UID="F020"></base></glyph>
+<glyph PSName="three.telu"><base UID="F033"></base></glyph>
+<glyph PSName="two.telu"><base UID="F032"></base></glyph>
+<glyph PSName="zero.telu"><base UID="F030"></base></glyph>
+<glyph UID="0951" PSName="u0951"><base UID="F09A"></base></glyph>
+<glyph UID="0952" PSName="u0952"><base UID="F09B"></base></glyph>
+<glyph UID="0953" PSName="u0953"><base UID="F09C"></base></glyph>
+<glyph UID="0954" PSName="u0954"><base UID="F09D"></base></glyph>
 <glyph UID="0950" PSName="u0950"><base UID="F023"></base></glyph>
+<glyph PSName="part"><base UID="F0F0"></base></glyph>
 <glyph UID="0C01" PSName="u0C01"><base UID="F08A"></base></glyph>
 <glyph UID="0C02" PSName="u0C02"><base UID="F04C"></base></glyph>
 <glyph UID="0C03" PSName="u0C03"><base UID="F04D"></base></glyph>
@@ -48,6 +79,7 @@
 <glyph PSName="u0C1C.sub"><base UID="F0EA"></base></glyph>
 <glyph PSName="u0C1C_u0C3F"><base UID="F0D1"></base></glyph>
 <!--<glyph PSName="u0C1C_u0C40"><base UID="F0D2"></base></glyph>-->
+<glyph PSName="u0C1D.part"><base UID="F026"></base></glyph>
 <glyph UID="0C1D" PSName="u0C1D"><base UID="F04C"></base><base UID="F052"></base><base UID="F026"></base><base UID="F056"></base></glyph>
 <glyph PSName="u0C1D.base"><base UID="F04C"></base><base UID="F026"></base><base UID="F056"></base></glyph>
 <glyph PSName="u0C1D.sub"><base UID="F0EB"></base></glyph>
@@ -105,6 +137,7 @@
 <glyph UID="0C2F" PSName="u0C2F"><base UID="F0B8"></base><base UID="F0AB"></base><base UID="F073"></base><base UID="F056"></base></glyph>
 <glyph PSName="u0C2F.base"><base UID="F0B8"></base><base UID="F073"></base><base UID="F056"></base></glyph>
 <glyph PSName="u0C2F.longi"><base UID="F0B8"></base><base UID="F073"></base><base UID="F057"></base></glyph>
+<glyph PSName="u0C2F.part"><base UID="F0B8"></base></glyph>
 <glyph PSName="u0C2F.sub"><base UID="F0F9"></base></glyph>
 <glyph UID="0C30" PSName="u0C30"><base UID="F04C"></base><base UID="F052"></base></glyph>
 <glyph PSName="u0C30.base"><base UID="F04C"></base></glyph>
