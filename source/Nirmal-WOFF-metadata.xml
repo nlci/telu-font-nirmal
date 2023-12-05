@@ -9,27 +9,14 @@
       role="NLCI designers and font engineers"
     />
   </credits>
-  <description>
+  <description url="http://www.nlci.in/fonts/">
     <text lang="en">
       Pan Telugu font designed to support all the languages using the Telugu script.
-      
-      ChangeLog
-      ---------
-      (This should list both major and minor changes, most recent first.)
-      
-      Unreleased
-      - Add many Latin and Devanagari characters
-      - Latin glyphs in Nirmal and Asha are from Gentium Book Basic (https://software.sil.org/gentium/) scaled 71%
-      - Latin glyphs in Elur are from Source Sans Pro (https://fonts.adobe.com/fonts/source-sans/) scaled 71%
-      - Additional Latin glyphs in Elur are from Charis SIL (https://software.sil.org/charis/) scaled 71%
-      - Indian Rupee Sign is from Annapurna SIL (https://software.sil.org/annapurna/) scaled 71%
-      5 Jun 2015 (Dev NLCI) NLCI Telugu fonts version 0.911
-      - Latin glyphs are from Charis SIL (http://scripts.sil.org/CharisSILfont)
     </text>
   </description>
   <license url="http://scripts.sil.org/OFL" id="org.sil.ofl.1.1">
     <text lang="en">
-      This Font Software is Copyright (c) 2009-2021, NLCI (http://www.nlci.in/fonts/)
+      This Font Software is Copyright (c) 2009-2022, NLCI (http://www.nlci.in/fonts/)
       with Reserved Font Names "Nirmal" and "Asha" and "Elur" and "NLCI".
       Latin glyphs in Nirmal and Asha are Copyright (c) 2003-2019, SIL International (http://www.sil.org/)
       with Reserved Font Names "Gentium" and "SIL".
@@ -135,7 +122,7 @@
   </license>
   <copyright>
     <text lang="en">
-      This Font Software is Copyright (c) 2009-2021, NLCI (http://www.nlci.in/fonts/)
+      This Font Software is Copyright (c) 2009-2022, NLCI (http://www.nlci.in/fonts/)
       with Reserved Font Names "Nirmal" and "Asha" and "Elur" and "NLCI".
       Latin glyphs in Nirmal and Asha are Copyright (c) 2003-2019, SIL International (http://www.sil.org/)
       with Reserved Font Names "Gentium" and "SIL".
